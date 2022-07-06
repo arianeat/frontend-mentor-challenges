@@ -1,0 +1,33 @@
+@media (max-width:1000px) {
+    body{
+       
+        box-sizing: border-box;
+      
+    }
+    
+    .main{
+        width: 500px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+    .texto{
+       width: 500px;
+       height: 400px;
+       order:2;
+    }
+
+    .section{
+    
+        width: 500px;
+        height: 400px;
+        order: 1;
+    }
+   
+}

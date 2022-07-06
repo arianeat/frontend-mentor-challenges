@@ -1,0 +1,115 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    color: hsl(234, 12%, 34%);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+.main__titulo{
+  
+    font-weight: 200;
+    margin: 50px 0 0  0;
+}
+.main__subtitulo{
+  
+    margin: 5px 0 10px 0;
+}
+.main__paragrafo{
+  
+    width: 45%;
+    color: hsl(229, 6%, 66%);
+    font-size: 13px;
+    text-align: center;
+    margin: 05px 0 20px 0 ;
+}
+.section{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 00px 20px 0px 20px;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px 1px rgba(128, 128, 128, 0.205);
+    border-top: 4px solid;
+}
+
+.card__titulo{
+  
+    margin-bottom: 5px;
+}
+.card__descricao{
+
+    color: hsl(229, 6%, 66%);
+    font-size: 12px;
+}
+.card__imagem{
+  
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.card__imagem--icone{
+    height: 60px;
+    width: 60px;
+}
+.card--vermelho{
+    margin-bottom: 10px;
+    border-top-color: hsl(0, 78%, 62%);
+
+}
+.card--amarelo{
+    border-top-color: hsl(34, 97%, 64%);
+}
+
+.card--verde{
+    align-self: center;
+    margin:10px;
+    border-top-color: hsl(180, 62%, 55%);
+}
+
+.card--azul{
+    align-self: center;
+    margin:10px;
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+@media (max-width:800px){
+
+    .main{
+        width: 100vw;
+    }
+    .main__paragrafo{
+        width: 90%;
+    }
+    .section{
+        margin: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .card{
+      
+        padding: 0 20px 20px 20px;
+    }
+    
+}

@@ -1,0 +1,190 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(229, 57%, 11%);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100vw 50vh;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;   
+}
+
+.arquivo{
+    height: 200px;
+    width: 360px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 100px 10px 10px;
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 30px 0 0;  
+    box-shadow: 5px 5px 10px 5px rgba(32, 32, 32, 0.322); 
+
+    
+}
+
+.arquivo__logo{
+    height: 40px;
+    width: 130px;
+}
+.arquivo__icone{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+   
+}
+.icone{
+    background-color: hsl(229, 57%, 11%);
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0 0;
+    border-radius: 7px;
+    padding: 24px;
+} 
+
+.arquivo__left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.balao{
+    height: 60px;
+    width: 140px;
+    background-color: white;
+    color: rgb(107, 107, 107);
+    margin:-20px 40px;
+    z-index: 1;
+    position: relative;
+    border-radius: 10px 10px 0 10px;
+    box-sizing: border-box;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+
+.balao:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-top: 20px solid rgb(255, 255, 255);
+    bottom: -20px;
+    left: 120px;
+}
+.balao__numero{
+    color: black;
+    font-size: 30px;
+    margin: 0 10px 0 0;
+}
+
+.balao__texto{
+    margin: 0;
+}
+.pacote{
+    border-radius: 10px;
+    background-color: hsl(228, 56%, 26%);
+    box-sizing: border-box;
+    padding: 40px;
+    width: 500px;
+    color: hsla(244, 70%, 96%, 0.822);
+    box-shadow: 5px 5px 10px 5px rgba(32, 32, 32, 0.322); 
+    
+}
+.pacote__texto{
+    margin: 0;
+      
+}
+
+.texto__destaque{
+    font-weight: 700;
+    
+}
+.pacote__barra{
+    background-color: hsla(229, 57%, 11%, 0.486);
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 5px;
+    margin: 10px 0 5px 0;
+}
+
+.barra__status{
+    height: 65%;
+    width: 80%;
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%) ,hsl(335, 100%, 65%));
+    border-radius: 10px;
+  
+}
+.barra__ponto{
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin:-13px;
+}
+.pacote__limite{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-weight: 700;
+}
+
+@media (max-width:900px){
+
+    body{
+        background-image: url("images/bg-desktop.png");
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        
+    }
+    .main{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .arquivo{
+        margin: 0 0 20px 0;
+        width: 340px;
+    }
+    .pacote{
+        margin: 0;
+        width: 340px;
+        padding: 40px 40px 50px 40px;
+    }
+
+    .balao{
+        order:1;
+        margin:-30px auto;
+        border-radius: 10px;
+
+    }
+    .balao:after{
+        border:none;
+    }
+
+}

@@ -1,0 +1,104 @@
+body{
+    background-image: url("images/bg-pattern-top.svg"),url("images/bg-pattern-top.svg");
+    background-color: hsl(185, 75%, 39%);
+    background-attachment: fixed, fixed;
+    background-position: -250px -500px, 700px 400px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 1000px, 1000px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    
+}
+
+.card{
+    /*border: 1px solid red;*/
+    background-color: white;
+    width: 330px;
+    height: 380px;
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(128, 128, 128, 0.459);
+
+}
+
+.card__photo{
+    border-radius: 10px 10px 0 0 ;
+    width: 100%;
+   /* border: 1px solid red;*/
+   
+}
+
+.photo{
+    position: relative;
+    top: -50px;
+    left: 110px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.cabecario{
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -50px 0 0 0 ;
+
+}
+
+.cabecario__titulo{
+    /*border: 1px solid red;*/
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+
+}
+.cabecario__cidade{
+    font-size: 15px;
+    color: hsl(0, 0%, 59%);
+    margin: 0 0 20px 0;
+}
+
+
+.secao{
+   /* border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 0%, 75%);
+    padding: 10px;
+}
+
+.dados{
+  /*  border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 50px;
+    
+}
+
+.dados__titulo{
+  /*  border: 1px solid red;*/
+    margin: 10px;
+    font-weight: 700;
+}
+.dados__descricao{
+    /*border: 1px solid red;*/
+    color: hsl(0, 0%, 59%);
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 2px;
+}

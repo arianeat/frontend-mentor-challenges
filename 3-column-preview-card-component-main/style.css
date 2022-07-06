@@ -1,0 +1,133 @@
+body{
+    background-color: hsl(0, 0%, 95%);
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.cards{
+    
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 900px;
+    height: 70%;
+  
+}
+
+.car{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 70px 50px 50px;
+   
+}
+
+.car--laranja{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.car--verde{
+    background-color:hsl(184, 100%, 22%) ;
+}
+
+.car--escuro{
+    background-color:hsl(179, 100%, 13%) ;
+    border-radius: 0 10px 10px 0;
+}
+
+.caixa{
+   
+    height: 70%;
+
+}
+
+.car__titulo{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+}
+.car__descricao{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.car__botao{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.car__botao--laranja{
+    color: hsl(31, 77%, 52%);
+}
+.car__botao--laranja:hover{
+    border: 3px solid hsla(0, 0%, 100%, 0.75);
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color:hsl(31, 77%, 52%) ;
+}
+.car__botao--verde{
+    color: hsl(184, 100%, 22%) ;
+}
+.car__botao--verde:hover{
+    border: 3px solid hsla(0, 0%, 100%, 0.75);
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color:hsl(184, 100%, 22%)  ;
+}
+.car__botao--escuro{
+    color: hsl(179, 100%, 13%) ;
+}
+.car__botao--escuro:hover{
+    border: 3px solid hsla(0, 0%, 100%, 0.75);
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color:hsl(179, 100%, 13%) ;
+}
+
+@media (max-width:900px) {
+
+    body{
+        background-color: black;
+        display: flex;
+        width: 100vw;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 5px;
+    }
+    .cards{
+        flex-direction: column;   
+        margin: 0;
+       
+    }
+    .car{
+        padding: 20px;
+    }
+   
+    .car--laranja{
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .car--escuro{
+        border-radius: 0 0 10px 10px ;
+    }
+    .car__botao{
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width:400px){
+    .car__descricao{
+        font-size: 10px;
+    }
+}
